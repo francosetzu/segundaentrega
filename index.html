@@ -1,103 +1,109 @@
 <!DOCTYPE html>
 <html lang="es"> <!-- siempre en español  "es"-->
-<head>
+    <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Las flores de Sabrina</title> <!-- tìtulo de la página (se verá como nombre en la pestaña)-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="./css/estilos.css"> <!-- linkeando css -->
         <script src="https://kit.fontawesome.com/a02b6c3e31.js" crossorigin="anonymous"></script>
-</head>
-<body> <!-- siempre debe llevar header, main y footer-->
-        <header> <!-- padre de div class="contenedorLogo", div class="contenedorLinkNav", de <ul> y de <h1> y abuelo de <li>"-->
-                <div class="contenedorLogoNav">
-                    <div class="contenedorLogo"> 
-                        <img class="logo" src="./assets/img/Logo-removebg-preview.png" alt="">
-                    </div>
-                
-                    
-                <nav class="navegacion">
-                    
-                <ul class="listaNavegacion"> <!-- navegación / menú -->
-                    <li class="listaItem"><a class="claseA" href="#">Inicio</a></li> <!-- # Significa que ahí estoy parado en este momento-->
-                    <li class="listaItem"><a class="claseA" href="./pages/nosotros.html">Nosotros</a></li> <!-- ./ pq' están en distintos niveles-->
-                    <li class="listaItem"><a class="claseA" href="./pages/galeria.html">Galeria</a></li>
-                    <li class="listaItem"><a class="claseA" href="./pages/contacto.html">Contacto</a></li>
-                    <li class="listaItem"><a class="claseA" href="./pages/eventos.html">Eventos</a></li>
-                </ul>
-                </nav>
-                <h1 class="tituloPrincipal"> Las flores de Sabrina </h1>
-                <p class="sloganEmprendimiento"> Slogan del emprendimiento </p>
-                
+        <link rel="shortcuit icon" href="favicon.ico" type=""image/x-icon">
+    </head>
+    <body> <!-- siempre debe llevar header, main y footer-->
+        <header class="container-fluid  header"> 
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent  listaNavegacion">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="./assets/img/Logo-removebg-preview.png" alt="" width="100" >
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav w-100 justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="pages/galeria.html">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="pages/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="pages/eventos.html">Eventos</a>
+                        </li>
+                    </ul>
                 </div>
-                <hr>
-        </div>
+                </div>
+            </nav>  
+            <h1 class="text-center tituloPrincipal">LAS FLORES DE SABRINA</h1>
         </header>
-
-        <main class="main">
-            <div class="divLogoParrafo">
-            <div class="divImagenLogo">
-                <div class="contenedorImagenInicial">
-                <img class="imagenInicial" src="./assets/img/high-angle-phytotherapy-items-assortment.jpg" alt="">
-                </div>
-            </div>        
-                <div class="parrafoLargoInicial">
-                    <div class="contenedorParrafoLargoInicial">
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi maiores impedit enim non
-                    sed, doloremque ipsam numquam quod nihil aliquam voluptates facere saepe possimus atque
-                    beatae voluptatibus perferendis. Quod esse possimus enim error non et dolores quisquam 
-                    ducimus praesentium, consectetur optio at atque, rerum iste. Possimus praesentium necessitatibus
-                    epudiandae quia impedit corrupti tempore dignissimos dolor quas fugiat minus reprehenderit, accusamus
-                    a ducimus debitis similique, illo et perspiciatis totam, optio iusto dicta tempora. Tempore quidem ratione
-                    obcaecati nobis unde, alias ipsum adipisci in quos officia molestias porro, odio, aperiam ipsa quod harum beatae
-                    inventore dolores perferendis! Similique sint totam aliquam quibusdam!  </p>
+        <main class="container main">
+            <div class="overflow-hidden">
+            <section>
+                <div class="row">
+                    <div class="col divContenedorImagen">
+                        <div class="card contenedorImagen" style="width: 20rem;">
+                            <img class= "imagenDeInicio justify-content-center" src="./assets/img/ImagenInicial.jpg" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+                    <div class="col  textoDeInicio">
+                        <p class="text-center">Las <span class="floresDeBach">flores de bach</span> son un conjunto de 38 escencias que se obtienen de diferentes flores que forman parte del sistema floral.</p>
+                        <p class="text-center">Cada una de ellas, refiere a un estado emocional y específico en el puede entrarse la persona. Son <span class="floresDeBach">esencias vibracionales.</span></p>
+                        <p class="text-center">Las flores de bach <span class="floresDeBach">se encargarán de elevar las vibraciones de nuestras emociones</span>, permitiéndonos lograr nuestra armonía y equilibrio. Además, muchas veces, nos ayudan a afrontar situaciones en las que no se sabe como continuar.</p>
+                        <p class="text-center">Otro beneficio de las flores de bach es el crecimiento personal que se obtiene, ya que a través de la observación de sí mismo, uno puede ir conociéndose, conociendo sus cualidades profundas y sus limites.</p>
                     </div>
                 </div>
-                <!--imagenes para las tarjetas-->
-                <section class="sectionCards">
-                    <h2> </h2>
-                    <br>
-                    <br>
-                    <br>
-                    <div class="cards">
-                        <a href="./pages/nosotros.html"><img class="imagen1"src="./assets/img/SINOSOTROS.jpg" alt="Imagen que llevará a nosotros"></a>
-                        <h3>Las flores de Sabrina</h3>
-                    </div>
-                    <div class="cards ">
-                        <a href="./pages/contacto.html"><img class="imagen2"src="./assets/img/SICONTACTO.webp" alt="Imagen que llevará a contacto"></a>
-                        <h3>Contáctanos</h3>
-                    </div>
-                    <div class="cards">
-                        <a href="./pages/galeria.html"><img class="imagen3"src="./assets/img/SIGALERIA.jpg" alt="Imagen que llevará a galería"></a>
-                        <h3>Clientes felices</h3>
-                    </div>
-                     <div class="cards">
-                        <a href="./pages/eventos.html"><img class="imagen4"src="./assets/img/SIEVENTO.jpg" alt="Imagen que llevará a eventos"></a>
-                        <h3>¿Sabías qué?</h3>
-                        
-                    </div>
+            </section>
             </div>
-                <p class="parrafoFinal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste nostrum nulla eum. Molestiae saepe dolore
-                    consectetur dicta fuga excepturi aut labore temporibus dolores architecto, blanditiis distinctio tenetur 
-                    vel perspiciatis exercitationem dolorum maiores eaque suscipit? Officia mollitia, deserunt ad autem accusamus
-                    asperiores hic omnis enim, vel in odio amet, perferendis rem! Ipsa rem tempora blanditiis sint sequi facere 
-                    exercitationem autem incidunt, iusto doloremque a expedita, culpa voluptatibus! Quo at eveniet natus provident
-                    laboriosam. Omnis animi provident voluptatum nobis natus sunt facilis voluptate mollitia, quod quas, delectus
-                    placeat magnam perferendis harum molestiae totam, asperiores vero illum ad tenetur aperiam. Nesciunt, beatae 
-                    repudiandae! </p>
-                </section>
+            
+            <div class="container"> <p class="text-center"> Las flores de bach nos ayudan a mantener y recuperar la amornía en nuestra vida, la paz interior y la vitalidad. Nos permiten aliviar el estrés y sobrellevar mejor todo aquello que nos toca vivir en lo citidiano, mejorar nuestro modo de relacionarnos con nosotros mismos y con los demás.</p></div>
 
+            
+
+            <div class="container card-group">
+                <div class="card">
+                  <a href="./pages/nosotros.html"><img src="./assets/img/LasFloresDeSabrina.jpg" class="card-img-top" alt="..."></a>
+                  <div class="card-body">
+                    <h5 class="card-title text-center">Las flores de Sabrina</h5>
+                  </div>
+                </div>
+                <div class="card">
+                  <a href="./pages/contacto.html"><img src="./assets/img/Contáctanos.jpg" class="card-img-top" alt="..."></a>
+                  <div class="card-body">
+                    <h5 class="card-title text-center">Contáctanos</h5>
+                  </div>
+                </div>
+                <div class="card">
+                  <a href="./pages/galeria.html"><img src="./assets/img/Clientes .jpg" class="card-img-top" alt="..."></a>
+                  <div class="card-body">
+                    <h5 class="card-title text-center">Clientes felices</h5>
+                  </div>
+                </div>
+                <div class="card">
+                    <a href="./pages/eventos.html"><img src="./assets/img/SabíasQué.jpg" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                      <h5 class="card-title text-center">¿Sabías qué?</h5>
+                    </div>
+                  </div>
+            </div>
+
+                <p class="container text-center">El tratamiento con flores de bach es <span class="floresDeBach">complementario</span> de cualquier otro tratamiento médico que la persona esté llevando en ese momento. Esto significa que en ningún caso reemplaza al tratamiento o medicación que el consultante lleve adelante.</p>
+                <p class="container text-center">Las flores de bach son <span class="floresDeBach">totalmente naturales</span> (no tienen contraindicaciones, por lo que, pueden ser tomadas por cualquier persona) <span class="floresDeBach">y no son productos homeopáticos, tampoco son productos químicos.</span> </p>
         </main>
-        
-        <footer class="footer">
-            <hr class="hrFooter"> <!-- el hr me hace una linea en la página -->
+        <footer class="container-fluid footer">
+            <hr class="hrFooter"> <!-- el hr me hace una linea en la página --->
             <div class="contenedorRedes">
-                <a href="http://www.Instagram.com"target="blank"><i class="fa-brands fa-instagram fa-beat-fade fa-xl" style="color: #f53f7c;"></i></a>
-                <a href="http://www.facebook.com"target="blank"><i class="fa-brands fa-square-facebook fa-beat-fade fa-xl" style="color: #f53f7c;"></i></a>
+                <a href="http://www.Instagram.com"target="blank"><i class="fa-brands fa-instagram fa-2xl" style="color: #f55bb5;"></i></a>
+                <a href="http://www.facebook.com"target="blank"><i class="fa-brands fa-facebook fa-2xl" style="color: #f55bb5;"></i></a>
             </div>
-            
             <p> Todos los derechos reservados © 2023 - Diseñado por Franco Setzu</p>
-            
         </footer>
-</body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
 </html>

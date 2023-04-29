@@ -4,46 +4,116 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Nosotros</title> <!-- tìtulo de la página (se verá como nombre en la pestaña)-->
+        <title>Las flores de Sabrina</title> <!-- tìtulo de la página (se verá como nombre en la pestaña)-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="../css/estilos.css"> <!-- linkeando css -->
         <script src="https://kit.fontawesome.com/a02b6c3e31.js" crossorigin="anonymous"></script>
-</head>
-<body>
-        <header class="headerNosotros"> <!-- padre de div class="contenedorLogo", div class="contenedorLinkNav", de <ul> y de <h1> y abuelo de <li>"-->
-            <div class="contenedorLogoNav">
-                <div class="contenedorLogo"> 
-                    <img class="logo" src="../assets/img/Logo-removebg-preview.png" alt="">
+        <link rel="shortcuit icon" href="../favicon.ico" type=""image/x-icon">
+    </head>
+    <body>
+        <header class="container-fluid  headerNosotros"> 
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent  listaNavegacion">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="../assets/img/Logo-removebg-preview.png" alt="" width="100" >
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav w-100 justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="galeria.html">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="eventos.html">Eventos</a>
+                        </li>
+                    </ul>
                 </div>
-                
-            <nav class="navegacion">
-                
-            <ul class="listaNavegacion"> <!-- navegación / menú -->
-                <li class="listaItem"><a class="claseA" href="../index.html">Inicio</a></li> <!-- # Significa que ahí estoy parado en este momento-->
-                <li class="listaItem"><a class="claseA" href="#">Nosotros</a></li> <!-- ./ pq' están en distintos niveles-->
-                <li class="listaItem"><a class="claseA" href="galeria.html">Galeria</a></li>
-                <li class="listaItem"><a class="claseA" href="contacto.html">Contacto</a></li>
-                <li class="listaItem"><a class="claseA" href="eventos.html">Eventos</a></li>
-            </ul>
-            </nav>
-            <h1 class="tituloPrincipal">Sobre nosotros</h1>
-            <br>
-            
-            
-            </div>
-            <hr>
-    </div>
-    </header>
+                </div>
+            </nav>  
+               <h1 class="text-center tituloPrincipal">Sobre Nosotros</h1>
+        </header>
         <main class="main">
+
+            <div class="overflow-hidden">
+                <section>
+                    <section>
+                        <div class="row">
+                            <div class="col divContenedorImagenUno">
+                                <div class="card contenedorImagenUno" style="width: 20rem;">
+                                    <img class= "imagenUno justify-content-center" src="../assets/img/Nosotros1.jpg" class="card-img-top" alt="...">
+                                </div>
+                            </div>
+                            <div class="text-center col textoNosotros">
+                                <p class="container text-center">Mi nombre es Sabrina Setzu y soy especialista en flores de bach.</p>
+                                <p class="container text-center">Me baso en las teorías del <span class="floresDeBach">Dr. Edward Bach</span> para la aplicación de su sistema. Mi intención es brindarles la mejor fórmula para su equilibrio vibracional.</p>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div class="row">
+                            <div class="col divContenedorImagenDos">
+                                <div class="card contenedorImagenDos" style="width: 20rem;">
+                                    <img class= "imagenDos" src="../assets/img/Nosotros 2.jpg" class="card-img-top" alt="...">
+                                </div>
+                            </div>
+                            <div class="col  textoNosotros">
+                                <p class="container text-center">El procedimiento consiste en que el interesado en tener sus flores de bach se contacte conmigo (de manera personal o virtual), le pediré que me comente qué le está sucediendo y de acuerdo a ello se le entregará una fórmula con una convinación de flores para que ésta ayude a armonizarlo.</p>
+                                <p class="container text-center">La fórmula que se le entrega a la persona se realiza en base a las emociones que manifiesta en ese momento, <span class="floresDeBach">emociones negativas</span>, que está viviendo actulamente y desea equilibrar.</p>
+                            </div>
+                    </section>
+
+                    <section>
+                        <div class="row">
+                            <div class="col divContenedorImagenTres">
+                                <div class="card contenedorImagenTres" style="width: 20rem;">
+                                    <img class= "imagenTres justify-content-center" src="../assets/img/Nosotros 3.jpg" class="card-img-top" alt="...">
+                                </div>
+                            </div>
+                            <div class="col  textoNosotros">
+                                <p class="container text-center">Se le entregará sus fórmula en un recipiente de vidrio, el mismo contiene un gotero. Para su correcto uso deberá: <span class="floresDeBach">durante los dos primeros días tomar:<span class="cantidad">cuatro gotas seis veces al día</span> y a partir del tercer día en adelante deberá tomar: <span class="cantidad">cuatro gotas cuatro veces al día. </span></span> </p>
+                            </div>                       
+                        </div>  
+                    </section>
+
+                    <section>
+                        <div class="row">
+                            <div class="col divContenedorImagenCuatro">
+                                <div class="card contenedorImagenCuatro" style="width: 20rem;">
+                                    <img class= "imagenCuatro justify-content-center" src="../assets/img/Nosotros4.jpg" class="card-img-top" alt="...">
+                                </div>
+                            </div>
+                            <div class="col  textoNosotros">
+                                <p class="container text-center"> Una vez que consumas tu fórmula deberás comunicarte conmigo para que determinemos si es necesario continuar con la misma fórmula, hacer una nueva o finalizar la toma de la misma. No hay una duración establecida para tomarlas, a veces, puede ser suficiente con poco tiempo y en otras ocasiones es necesario continuar tomándolas durante algunas semanas.</p>
+                        </div>
+                    </section>
+
+           
+            
+
+
+
+
+
         </main>
-        <footer class="footer">
-            <hr class="hrFooter"> <!-- el hr me hace una linea en la página -->
+        <footer class="container-fluid footer">
+            <hr class="hrFooter"> <!-- el hr me hace una linea en la página --->
             <div class="contenedorRedes">
-                <a href="http://www.Instagram.com"target="blank"><i class="fa-brands fa-instagram fa-beat-fade fa-xl" style="color: #f53f7c;"></i></a>
-                <a href="http://www.facebook.com"target="blank"><i class="fa-brands fa-square-facebook fa-beat-fade fa-xl" style="color: #f53f7c;"></i></a>
+                <a href="http://www.Instagram.com"target="blank"><i class="fa-brands fa-instagram fa-2xl" style="color: #f55bb5;"></i></a>
+                <a href="http://www.facebook.com"target="blank"><i class="fa-brands fa-facebook fa-2xl" style="color: #f55bb5;"></i></a>
             </div>
-            
             <p> Todos los derechos reservados © 2023 - Diseñado por Franco Setzu</p>
-            
         </footer>
-</body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
 </html>

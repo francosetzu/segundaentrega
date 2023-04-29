@@ -4,48 +4,76 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Eventos</title> <!-- tìtulo de la página (se verá como nombre en la pestaña)-->
+        <title>Las flores de Sabrina</title> <!-- tìtulo de la página (se verá como nombre en la pestaña)-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="../css/estilos.css"> <!-- linkeando css -->
         <script src="https://kit.fontawesome.com/a02b6c3e31.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <header class="headerEventos"> <!-- padre de div class="contenedorLogo", div class="contenedorLinkNav", de <ul> y de <h1> y abuelo de <li>"-->
-        <div class="contenedorLogoNav">
-            <div class="contenedorLogo"> 
-                <img class="logo" src="../assets/img/Logo-removebg-preview.png" alt="">
-            </div>
-        
-            
-        <nav class="navegacion">
-            
-        <ul class="listaNavegacion"> <!-- navegación / menú -->
-            <li class="listaItem"><a class="claseA" href="../index.html">Inicio</a></li> <!-- # Significa que ahí estoy parado en este momento-->
-            <li class="listaItem"><a class="claseA" href="nosotros.html">Nosotros</a></li> <!-- ./ pq' están en distintos niveles-->
-            <li class="listaItem"><a class="claseA" href="galeria.html">Galeria</a></li>
-            <li class="listaItem"><a class="claseA" href="contacto.html">Contacto</a></li>
-            <li class="listaItem"><a class="claseA" href="#">Eventos</a></li>
-        </ul>
-        </nav>
-        <h1 class="tituloPrincipal"> Eventos </h1>
-        <br>
-        
-        </div>
-        <hr>
-        </div>
-    </header>
-
+        <link rel="shortcuit icon" href="../favicon.ico" type=""image/x-icon">
+    </head>
+    <body>
+        <header class="container-fluid  headerEventos"> 
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent  listaNavegacion">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="../assets/img/Logo-removebg-preview.png" alt="" width="100" >
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav w-100 justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="galeria.html">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Eventos</a>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+         </nav>  
+         <h1 class="text-center tituloPrincipal">EVENTOS</h1>
+        </header>
         <main class="main">
-
-        </main>
-        <footer class="footer">
-            <hr class="hrFooter"> <!-- el hr me hace una linea en la página -->
-            <div class="contenedorRedes">
-                <a href="http://www.Instagram.com"target="blank"><i class="fa-brands fa-instagram fa-beat-fade fa-xl" style="color: #f53f7c;"></i></a>
-                <a href="http://www.facebook.com"target="blank"><i class="fa-brands fa-square-facebook fa-beat-fade fa-xl" style="color: #f53f7c;"></i></a>
+            <h1 class="text-center mt-3"><i class="fa-sharp fa-solid fa-circle-info fa-shake fa-lg" style="color: #e76ed1;"></i> ¿SABÍAS QUÉ?</h1>
+            <p class="container text-center">Junto conmigo ahora poder formarte en terapia floral, para que sepas <span class="floresDeBach">todo</span> sobre ésta fabulosa terapia natural, sus beneficios y para que puedar conocer cada una de las flores en particular y en su conjunto para su abordaje terapéutico.</p>
+            
+            <div class="container card-group">
+                <div class="card">
+                  <img src="../assets/img/Evento (2).jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="../assets/img/Evento (3).jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                  <img src="../assets/img/Evento (1).jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                    <img src="../assets/img/Evento (4).jpg" class="card-img-top" alt="...">
+                </div>
             </div>
-            
-            <p> Todos los derechos reservados © 2023 - Diseñado por Franco Setzu</p>
-            
+            <p class="container text-center ">El curso tiene una duración de tres meses, se brindará material muy completo de manera virtual. A través de él podrás comprender que flores tendrás que utilizar para determinadas situaciones y con cuáles deberás combinarlas para poder crear una fórmula altamente efectiva. </p>
+            <p class="container text-center ">Si queres saber más sobre este curso de modalidad online, hace clik <a href="./contacto.html"target="blank">aquí</a> y dejá tus datos para poder recibir toda la información necesaria con respecto al curso, su forma de pago y cualquier consulta que tengas.</p> 
+            <p class="container text-center"> <span class="cita">"La enfermedad es el resultado en el cuerpo físico de la resistencia de la personalidad a la Guía del Alma. 
+                Aparece cuando nos volvemos sordos a la voz interior y olvidamos la divinidad que está en nosotros, cuando tratamos de forzar nuestros deseos sobre los demás o permitimos que sus sugerencias, pensamientos y órdenes nos influyan"</span> -Edward Bach.</p>
+        </main>
+        <footer class="container-fluid footer">
+            <hr class="hrFooter"> <!-- el hr me hace una linea en la página --->
+            <div class="contenedorRedes">
+                <a href="http://www.Instagram.com"target="blank"><i class="fa-brands fa-instagram fa-2xl" style="color: #f55bb5;"></i></a>
+                <a href="http://www.facebook.com"target="blank"><i class="fa-brands fa-facebook fa-2xl" style="color: #f55bb5;"></i></a>
+            </div>
+            <p> Todos los derechos reservados © 2023 - Diseñado por Franco Setzu</p>    
         </footer>
-</body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
 </html>

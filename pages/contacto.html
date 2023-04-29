@@ -1,90 +1,114 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+    <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Las flores de Sabrina</title>
-        <link rel="stylesheet" href="../css/estilos.css"> 
+        <title>Las flores de Sabrina</title> <!-- tìtulo de la página (se verá como nombre en la pestaña)-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/estilos.css"> <!-- linkeando css -->
         <script src="https://kit.fontawesome.com/a02b6c3e31.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <header class="headerContacto"> <!-- padre de div class="contenedorLogo", div class="contenedorLinkNav", de <ul> y de <h1> y abuelo de <li>"-->
-        <div class="contenedorLogoNav">
-            <div class="contenedorLogo"> 
-                <img class="logo" src="../assets/img/Logo-removebg-preview.png" alt="">
-            </div>
-        
-            
-        <nav class="navegacion">
-            
-        <ul class="listaNavegacion"> <!-- navegación / menú -->
-            <li class="listaItem"><a class="claseA" href="../index.html">Inicio</a></li> <!-- # Significa que ahí estoy parado en este momento-->
-            <li class="listaItem"><a class="claseA" href="nosotros.html">Nosotros</a></li> <!-- ./ pq' están en distintos niveles-->
-            <li class="listaItem"><a class="claseA" href="galeria.html">Galeria</a></li>
-            <li class="listaItem"><a class="claseA" href="#">Contacto</a></li>
-            <li class="listaItem"><a class="claseA" href="eventos.html">Eventos</a></li>
-        </ul>
-        </nav>
-        <h1 class="tituloPrincipal"> Contáctate con nosotros </h1>
-        <br>
-        
-        </div>
-        <hr>
-    </div>
-    </header>
-         
-        <main class="main">
+        <link rel="shortcuit icon" href="../favicon.ico" type=""image/x-icon">
+    </head>
+    <body>
+        <header class="container-fluid  headerContacto"> 
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent  listaNavegacion">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="../assets/img/Logo-removebg-preview.png" alt="" width="100" >
+                    </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav w-100 justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="galeria.html">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="eventos.html">Eventos</a>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+            </nav>  
+            <h1 class="text-center tituloPrincipal">CONTÁCTANOS</h1>
+        </header>
+        <main class=" container-fluid main">
             <br>
             <br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime inventore dolorum perferendis eligendi iure,
-                praesentium molestias. Sint sunt facilis rem saepe ea, dignissimos adipisci modi aut odit unde quas, magnam,
-                nihil commodi dolorem ratione. Ab totam, qui non veritatis accusamus iusto quis laborum rem provident distinctio
-                ssumenda facilis. Fugit expedita laboriosam accusamus quis unde assumenda eligendi! At accusantium voluptatum impedit enim 
-                provident voluptates recusandae eveniet harum, tempore sint! Ea dolore sint nostrum, deleniti, qui asperiores maiores veritatis
-                rerum eius alias omnis tenetur dicta! Obcaecati quod qui dolorem porro iste ducimus autem totam temporibus at consectetur, culpa beatae voluptas vero ipsum!</p>
-            <form>
-                <div>
-                    <input type="text"placeholder="Ingrese su nombre"required>
-                </div>
-                <div>
-                    <input type="email"placeholder="Inrese su correo electrónico"required>
-                </div>
-                <div>
-                    <input type="tel"placeholder="Ingresa tu número de celular"required>
-                </div>
-                    <!--LISTADO DESPLEGABLE-->
-                <div>
-                    <fieldset>
-                        <div>
-                            <label for="prov">Indique un motivo</label>
-                            <select name="motivo" id="motivos">
-                                <option value="motivo">Quiero mis flores de bach</option>
-                                <option value="motivo">Inscribirme al curso</option>
-                            </select>
-            
+            <p class="container text-center textoContacto"> Si estás interesados en adquirir tus flores de bach o realizar el curso online podes dejarnos tus datos en el siguiente formulario y nos pondremos en contacto con vos a la brevedad para brindarte toda la información necesaria.</p>
+            <p class="container text-center textoContacto"> Además, te dejamos la ubicación del local para que puedas acercarte cuando gustes y nuestro número de whatsapp para que puedas consultarnos lo que necesites. Estamos a tu disposición.</p>
+            <div>
+                <form>
+                    <form>
+                        <div class="container col-sm-1 col-md-12 form-row contenedorForm">
+                        <div class="col divForm">
+                            <input type="text pr-5" class="form-control" placeholder="Nombre y apellido"required>
                         </div>
-                    </fieldset>
-                </div>
-                    
-                <div>
-                    <textarea cols="30" rows="10"placeholder="Ingrese su comentario"></textarea>
-                </div>
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Limpiar">
-            </form>
-            <br>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.3783841117256!2d-64.19943728443693!3d-31.403699402781566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432988866745727%3A0x945fc11930a64efe!2s12%20de%20Octubre%20%26%20Coronel%20Agust%C3%ADn%20Olmedo%2C%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1679547365443!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </main>
-        <footer class="footer">
-            <hr class="hrFooter"> <!-- el hr me hace una linea en la página -->
-            <div class="contenedorRedes">
-                <a href="http://www.Instagram.com"target="blank"><i class="fa-brands fa-instagram fa-beat-fade fa-xl" style="color: #f53f7c;"></i></a>
-                <a href="http://www.facebook.com"target="blank"><i class="fa-brands fa-square-facebook fa-beat-fade fa-xl" style="color: #f53f7c;"></i></a>
+                        <div class="col divForm">
+                            <input type="text" class="form-control" placeholder="Número de celular"required>
+                        </div>
+                        <div class="col divForm">
+                            <input type="text" class="form-control" placeholder="Correo electrónico"required>
+                        </div>
+                        <div class="col divForm">
+                            <input type="text" class="form-control" placeholder="Ingrese su comentario"required>
+                        </div>
+                        <form class="form-inline">
+                            <div class="seleccionar">
+                                <div class="divSelect">
+                                 <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Seleccione un motivo</label>
+                                <select class="container custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                                <option selected></option>
+                                <option value="1">Quiero mis flores de bach</option>
+                                <option value="2">Quiero información sobre el curso online</option>
+                                </div>
+                                </select>
+                                <div class="divInput">
+                                <input type="submit" value="Enviar">
+                                <input type="reset" value="Limpiar">
+                                </div>
+                                </div>
+                            </div>
+                     </form>
+                </form>
             </div>
-            
-            <p> Todos los derechos reservados © 2023 - Diseñado por Franco Setzu</p>
-            
+             <br>
+             <br>
+            <section>
+                <div class="row">
+                    <div class="col mapa">
+                        <iframe class="container mapaEnSi"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.3783841117256!2d-64.19943728443693!3d-31.403699402781566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432988866745727%3A0x945fc11930a64efe!2s12%20de%20Octubre%20%26%20Coronel%20Agust%C3%ADn%20Olmedo%2C%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1679547365443!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="col textoDeMapa">
+                        <h2 class="container text-start"><span class="las">LAS FLORES DE SABRINA </span></h2>
+                        <p class="container text-start">Ubicado en: Coronel Olmedo esq. 12 de Octubre</p>
+                        <p class="container text-start">Contáctate conmigo: <a href="https://wa.me/3513631884"target="blank"><i class="fa-brands fa-whatsapp fa-2xl" style="color: #68e882;"></i></a></p>
+                    </div>
+                </div>
+            </section>
+            <br>   
+
+            <p class="container text-center">Podes acercarte de Lunes a Viernes de 10:00hs a 17:00 hs</p>
+        </main>
+        <footer class="sm-mt-50 container-fluid footer">
+            <hr class="hrFooter"> <!-- el hr me hace una linea en la página --->
+            <div class="contenedorRedes">
+                <a href="http://www.Instagram.com"target="blank"><i class="fa-brands fa-instagram fa-2xl" style="color: #f55bb5;"></i></a>
+                <a href="http://www.facebook.com"target="blank"><i class="fa-brands fa-facebook fa-2xl" style="color: #f55bb5;"></i></a>
+            </div>
+            <p> Todos los derechos reservados © 2023 - Diseñado por Franco Setzu</p>   
         </footer>
-</body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
 </html>

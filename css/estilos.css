@@ -10,7 +10,7 @@
 body{ /*Establecemos la fuente y el color del texto*/
     font-family: 'Manrope', sans-serif;
     color: black;
-    
+    background-color: rgb(237, 227, 214);
     
 }
 header{ /*Header, agrego en este caso background image y le modifico la posición, tamaño y el repeat*/
@@ -26,34 +26,12 @@ header{ /*Header, agrego en este caso background image y le modifico la posició
     
 }
 
-.contenedorLogoNav{ /*contenedor del logo y la navegación*/
-    display: inline-block;
-    ;
-    
-}
-
-.contenedorLogo{ /*contenedor del logo*/
-display: inline-block;
-position:relative; 
-left: 0;
-top: 0;
-
-}
-
 .logo{ /*logo*/
     width: 45% ;
     position: relative;
     
 }
 
-.navegacion{ /*navegación*/
-top:0;
-right: 0;
-position: absolute;
-font-size: 1,5 rem;
-
-
-}
 
 .listaNavegacion{ /*listanavegación*/
 list-style: none;
@@ -61,46 +39,127 @@ text-align: right;
 
 }
 
-.listaItem{ /*listaItem*/
-    display: inline-block;
-    position: relative;
-    top: 0;
-    right:1%;
-    padding-left: 15px;
-    color: rgb(2, 2, 2);
-}
-
-.claseA{  /*claseA le podré cambiar el color, tamaño, etc al menu*/
-    text-decoration: none;
-    text-align: center;
-    color:rgb(7, 7, 7);
-    padding-left: 10px;
-
-}
 
 .tituloPrincipal{ /*Titulo principal*/
-    margin-top: 0;
-    margin-left: 450px;
     text-align: center;
     text-transform: uppercase;
     text-decoration: underline;
     font-weight:600;
-   /* position:relative; */
+    display: flex;
+    justify-content: center;
     color:rgb(250, 74, 177);
     
-}
-.sloganEmprendimiento{ /*Slogan*/
-    display: inline-block;
-    text-align: start;
-    position: relative;
-    top: 0px;
-    left:65%;
 }
 
 .main{
     background-color: rgb(237, 227, 214);
-    height: 100vh;
+    
 }
+
+
+.contenedorImagen{
+    justify-content: center;
+    margin-left: 30%;
+}
+
+.textoDeInicio{
+    margin-right: 10%;
+}
+
+.floresDeBach{
+    color:rgb(250, 74, 177);
+}
+
+.contenedorImagenUno{
+    margin-left: 20%;
+}
+
+.contenedorImagenDos{
+    margin-left: 20%;
+}
+
+.textoNosotros{
+    margin-right: 10%;
+    margin-top: 10%;
+    padding-top: 50px;
+}
+
+.cantidad{
+    color: rgb(171, 39, 233);
+}
+
+.contenedorImagenTres{
+    margin-left: 20%;
+}
+
+.contenedorImagenCuatro{
+    margin-left: 20%;
+}
+
+.contenedorForm{
+    padding-top: 2%;
+    
+}
+
+.divForm{
+    padding-right: 10%;
+    padding-left: 10%;
+    
+}
+
+.divSelect{
+    padding-right: 20%;
+    padding-left: 20%;
+}
+
+
+.mapa{
+    margin-left: 5%;
+}
+
+.textoDeMapaa{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedorCard{
+    margin-top: 8%;
+    
+}
+
+.card-group{
+    margin-top: 3%;
+    column-gap: 15px;
+    padding-bottom: 3%;
+    
+    
+}
+
+
+.col{
+    
+    margin-top: 3%;
+
+}
+
+
+.contenedorTarjeta{
+    margin-top: 7%;
+
+}
+
+.contenedorTarjeta2{
+    margin-top: 1%;
+}
+
+.contenedorEstrellas{
+    display: flex;
+    justify-content: center;
+}
+
 
 .divLogoParrafo
 
@@ -114,6 +173,7 @@ text-align: right;
     width: 50%;
     text-align: center;
     display: inline-block;
+    position: absolute;
 }
 
 .imagenInicial{
@@ -163,6 +223,14 @@ text-align: right;
     object-fit: cover;
 }
 
+.las{
+    color: rgb(169, 131, 204);
+}
+
+.cita{
+    color:rgba(247, 116, 116, 0.918)
+}
+
 .parrafoFinal{
     text-align: center;
     display: block;
@@ -176,10 +244,8 @@ text-align: right;
 
 .footer{
     background-color: rgb(220, 200, 174);
-    
-    bottom: 0;
-    position: relative;
-    text-align: center;
+    text-align: center; 
+    padding-bottom: 15px;
     
 }
 
@@ -215,3 +281,45 @@ text-align: right;
     background-size: 99.9% 100%;
     background-repeat: cover;
 }
+
+/*MEDIA QUERIE PROPIA PARA QUE EL TEXTO NO SE ME BAJE AL FOOTER EN VERSION MOBILE*/
+@media screen and (min-width:0) and (max-width: 786px){
+    .divContenedorImagen{
+        margin-right: 80%;
+        padding-right: 70%;
+    }
+
+    .columnaImagenInicial{
+        margin-left: 20%;
+    }
+
+    .textoDeInicio{
+        margin-left: 10%;
+    }
+
+    .textoNosotros{
+        margin-left: 15%;
+    }
+
+    .divContenedorImagenUno {
+        margin-right: 50%;
+    }
+
+    .divContenedorImagenDos {
+        margin-right: 50%;
+    }
+
+    .divContenedorImagenTres {
+        margin-right: 50%;
+    }
+
+    .divContenedorImagenCuatro{
+        margin-right: 20%;
+    }
+
+    .footer{
+        margin-top: 30%;
+    }
+}
+
+/* TERMINA LA MEDIA QUERIE*/
