@@ -1,0 +1,217 @@
+ /*Siempre el import de la fuente primero*/
+ @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap');
+
+*{ /*Siempre esto para poder sacar toda su configuración y ponerla desde 0*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{ /*Establecemos la fuente y el color del texto*/
+    font-family: 'Manrope', sans-serif;
+    color: black;
+    
+    
+}
+header{ /*Header, agrego en este caso background image y le modifico la posición, tamaño y el repeat*/
+    background-image: url(../assets/img/flat-lay-natural-medicinal-herbs-bottles.jpg);   
+    background-position: top;
+    background-size: 99.9% 100%;
+    background-repeat: cover;
+    /*background-repeat:no-repeat;
+    background-size: 30%;
+    background-position:center;
+    position: relative;
+    left:0%*/
+    
+}
+
+.contenedorLogoNav{ /*contenedor del logo y la navegación*/
+    display: inline-block;
+    ;
+    
+}
+
+.contenedorLogo{ /*contenedor del logo*/
+display: inline-block;
+position:relative; 
+left: 0;
+top: 0;
+
+}
+
+.logo{ /*logo*/
+    width: 45% ;
+    position: relative;
+    
+}
+
+.navegacion{ /*navegación*/
+top:0;
+right: 0;
+position: absolute;
+font-size: 1,5 rem;
+
+
+}
+
+.listaNavegacion{ /*listanavegación*/
+list-style: none;
+text-align: right;
+
+}
+
+.listaItem{ /*listaItem*/
+    display: inline-block;
+    position: relative;
+    top: 0;
+    right:1%;
+    padding-left: 15px;
+    color: rgb(2, 2, 2);
+}
+
+.claseA{  /*claseA le podré cambiar el color, tamaño, etc al menu*/
+    text-decoration: none;
+    text-align: center;
+    color:rgb(7, 7, 7);
+    padding-left: 10px;
+
+}
+
+.tituloPrincipal{ /*Titulo principal*/
+    margin-top: 0;
+    margin-left: 450px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-weight:600;
+   /* position:relative; */
+    color:rgb(250, 74, 177);
+    
+}
+.sloganEmprendimiento{ /*Slogan*/
+    display: inline-block;
+    text-align: start;
+    position: relative;
+    top: 0px;
+    left:65%;
+}
+
+.main{
+    background-color: rgb(237, 227, 214);
+    height: 100vh;
+}
+
+.divLogoParrafo
+
+.divImagenLogo{
+    display:inline-block;
+    position:relative;
+    left: 20%;
+    margin-top: 5%;
+}
+.contenedorImagenInicial{
+    width: 50%;
+    text-align: center;
+    display: inline-block;
+}
+
+.imagenInicial{
+    width: 320px;
+    height:320px;
+    position:relative;
+}
+
+.parrafoLargoInicial{
+    color:black;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    right: 0% ;
+    left: 30%;
+    top: 24%;
+}
+.contenedorParrafoLargoInicial{
+    width: 50%;
+    text-align: center;
+    display: inline-block;
+}
+
+.sectionCards{
+    text-align: center;
+    position: relative;
+    
+
+}
+
+.cards{
+    width: 20%;
+    display: inline-block;
+    background-color: rgb(240, 238, 238);
+    box-shadow: -2px 8px 73px 12px rgba(0,0,0,0.55);
+    -webkit-box-shadow: -2px 8px 73px 12px rgba(0,0,0,0.55);
+    -moz-box-shadow: -2px 8px 73px 12px rgba(0,0,0,0.55);
+    padding: 15px;
+    border-radius:15px;
+    
+}
+
+.cards img{
+    width: 100%;
+    height: 20vh;
+    padding: 0;
+    object-fit: cover;
+}
+
+.parrafoFinal{
+    text-align: center;
+    display: block;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 1,5rem;
+
+}
+
+.footer{
+    background-color: rgb(220, 200, 174);
+    
+    bottom: 0;
+    position: relative;
+    text-align: center;
+    
+}
+
+/*NOSOTROS*/
+
+.headerNosotros{ 
+    background-image: url(../assets/img/FlowersBottles.jpg);   
+    background-position: top;
+    background-size: 99.9% 100%;
+    background-repeat: cover;
+}
+
+/*GALERIA*/
+.headerGaleria{
+    background-image: url(../assets/img/Flores-de-Bach-en-Bilbao-600x353.jpg);   
+    background-position: top;
+    background-size: 99.9% 100%;
+    background-repeat: cover;
+}
+
+/*CONTACTO*/
+.headerContacto{
+    background-image: url(../assets/img/esencias-florales-eduka.jpg);   
+    background-position: top;
+    background-size: 99.9% 100%;
+    background-repeat: cover;
+}
+
+/*EVENTOS*/
+.headerEventos{
+    background-image: url(../assets/img/eeee.jfif);   
+    background-position: top;
+    background-size: 99.9% 100%;
+    background-repeat: cover;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Las flores de Sabrina</title>
+        <link rel="stylesheet" href="../css/estilos.css"> 
+        <script src="https://kit.fontawesome.com/a02b6c3e31.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="headerContacto"> <!-- padre de div class="contenedorLogo", div class="contenedorLinkNav", de <ul> y de <h1> y abuelo de <li>"-->
+        <div class="contenedorLogoNav">
+            <div class="contenedorLogo"> 
+                <img class="logo" src="../assets/img/Logo-removebg-preview.png" alt="">
+            </div>
+        
+            
+        <nav class="navegacion">
+            
+        <ul class="listaNavegacion"> <!-- navegación / menú -->
+            <li class="listaItem"><a class="claseA" href="../index.html">Inicio</a></li> <!-- # Significa que ahí estoy parado en este momento-->
+            <li class="listaItem"><a class="claseA" href="nosotros.html">Nosotros</a></li> <!-- ./ pq' están en distintos niveles-->
+            <li class="listaItem"><a class="claseA" href="galeria.html">Galeria</a></li>
+            <li class="listaItem"><a class="claseA" href="#">Contacto</a></li>
+            <li class="listaItem"><a class="claseA" href="eventos.html">Eventos</a></li>
+        </ul>
+        </nav>
+        <h1 class="tituloPrincipal"> Contáctate con nosotros </h1>
+        <br>
+        
+        </div>
+        <hr>
+    </div>
+    </header>
+         
+        <main class="main">
+            <br>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime inventore dolorum perferendis eligendi iure,
+                praesentium molestias. Sint sunt facilis rem saepe ea, dignissimos adipisci modi aut odit unde quas, magnam,
+                nihil commodi dolorem ratione. Ab totam, qui non veritatis accusamus iusto quis laborum rem provident distinctio
+                ssumenda facilis. Fugit expedita laboriosam accusamus quis unde assumenda eligendi! At accusantium voluptatum impedit enim 
+                provident voluptates recusandae eveniet harum, tempore sint! Ea dolore sint nostrum, deleniti, qui asperiores maiores veritatis
+                rerum eius alias omnis tenetur dicta! Obcaecati quod qui dolorem porro iste ducimus autem totam temporibus at consectetur, culpa beatae voluptas vero ipsum!</p>
+            <form>
+                <div>
+                    <input type="text"placeholder="Ingrese su nombre"required>
+                </div>
+                <div>
+                    <input type="email"placeholder="Inrese su correo electrónico"required>
+                </div>
+                <div>
+                    <input type="tel"placeholder="Ingresa tu número de celular"required>
+                </div>
+                    <!--LISTADO DESPLEGABLE-->
+                <div>
+                    <fieldset>
+                        <div>
+                            <label for="prov">Indique un motivo</label>
+                            <select name="motivo" id="motivos">
+                                <option value="motivo">Quiero mis flores de bach</option>
+                                <option value="motivo">Inscribirme al curso</option>
+                            </select>
+            
+                        </div>
+                    </fieldset>
+                </div>
+                    
+                <div>
+                    <textarea cols="30" rows="10"placeholder="Ingrese su comentario"></textarea>
+                </div>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpiar">
+            </form>
+            <br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.3783841117256!2d-64.19943728443693!3d-31.403699402781566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432988866745727%3A0x945fc11930a64efe!2s12%20de%20Octubre%20%26%20Coronel%20Agust%C3%ADn%20Olmedo%2C%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1679547365443!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </main>
+        <footer class="footer">
+            <hr class="hrFooter"> <!-- el hr me hace una linea en la página -->
+            <div class="contenedorRedes">
+                <a href="http://www.Instagram.com"target="blank"><i class="fa-brands fa-instagram fa-beat-fade fa-xl" style="color: #f53f7c;"></i></a>
+                <a href="http://www.facebook.com"target="blank"><i class="fa-brands fa-square-facebook fa-beat-fade fa-xl" style="color: #f53f7c;"></i></a>
+            </div>
+            
+            <p> Todos los derechos reservados © 2023 - Diseñado por Franco Setzu</p>
+            
+        </footer>
+</body>
+</html>
